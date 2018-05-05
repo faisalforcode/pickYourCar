@@ -52,6 +52,19 @@ p {
     opacity: 0.9;
 }
 
+.buttonBuy {
+    padding: 12px 30px 13px;
+    text-decoration: none;
+    color: #fff;
+    background: #00abff;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 0 170px auto;
+}
+
+
 .button:hover {
     opacity: 1;
 }
@@ -64,6 +77,27 @@ p {
     min-height: 100vh;
     background: #f9f9f9;
     margin: 0 auto;
+}
+
+.containerCredit {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 512px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+
+input[type=text] {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 /**
  * Top Navigation

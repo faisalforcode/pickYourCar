@@ -1,1 +1,34 @@
-{{outlet}}
+
+{{#credit-card form="#my-form"}}
+  <form id='my-form' class='containerCredit'>
+  	Fill in your details for payment
+    <div class="ui input">
+      
+      {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
+    </div>
+ 
+    <div class="ui input">
+     
+      {{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
+    </div>
+ 
+    <div class="ui input">
+      
+      {{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
+    </div>
+ 
+    <div class="ui input">
+     
+      {{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
+    </div>
+
+    <div class="ui input">
+     
+      {{input type="text" name='email' value=creditCard.email placeholder='Email'}}
+    </div>
+    <br>
+ {{#link-to "about" class="buttonBuy"}}
+    Submit
+  {{/link-to}}
+  </form>  
+{{/credit-card}}
