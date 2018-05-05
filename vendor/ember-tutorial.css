@@ -45,7 +45,7 @@ p {
     padding: 12px 30px 13px;
     text-decoration: none;
     color: #fff;
-    background: #2185D0;
+    background: #00abff;
     border-radius: 5px;
     border: none;
     font-size: 16px;
@@ -60,7 +60,7 @@ p {
  */
 
 .container {
-    max-width: 1024px;
+    /**max-width: 1024px;*/
     min-height: 100vh;
     background: #f9f9f9;
     margin: 0 auto;
@@ -73,7 +73,7 @@ p {
     height: 4em;
     background-color: #677ae4;
     background-color: #05526A;
-    background-color: #e46855;
+    background-color: #00abff;
 }
 
 .menu h1 {
@@ -177,7 +177,7 @@ p {
  */
 
 .jumbo {
-    padding: 50px;
+    padding: 10px;
     background: #f6f6f6;
 }
 
@@ -220,6 +220,13 @@ p {
     height: 100px;
     float: left;
     margin-right: 45px;
+    border-radius: 5px;
+}
+
+.listing button {
+    height: 25px;
+    float: right;
+    margin-right: 10px;
     border-radius: 5px;
 }
 
