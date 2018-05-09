@@ -1,7 +1,6 @@
 import Route from '@ember/routing/route';
 import Ember from 'ember';
 
-<<<<<<< HEAD
 export default Ember.Route.extend({
   ajax: Ember.inject.service(),
   model() {
