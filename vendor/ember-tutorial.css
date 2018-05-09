@@ -252,6 +252,7 @@ input[type=text] {
 
 .listing img {
     height: 100px;
+    width: 175px;
     float: left;
     margin-right: 45px;
     border-radius: 5px;

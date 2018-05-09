@@ -22,7 +22,7 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-
+  apiKey: '080zLu3C9W2fhyE3BVbOGCMiEjIjMdy0'
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

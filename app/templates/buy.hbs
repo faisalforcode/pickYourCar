@@ -1,7 +1,26 @@
 
 {{#credit-card form="#my-form"}}
   <form id='my-form' class='containerCredit'>
-  	Fill in your details for payment
+  <p>Customer Information</p>
+   <div class="ui input">
+
+      {{input type="text" value=customer.firstName name='firstName' placeholder='Enter your first name'}}
+    </div>
+
+    <div class="ui input">
+
+      {{input type="text" value=customer.lastName name='lastName' placeholder='Enter your last name'}}
+    </div>
+
+    <div class="ui input">
+
+      {{input type="text" value=customer.contactNumber name='contactNumber' placeholder='+1-1111111111'}}
+    </div>
+    <div class="ui input">
+
+      {{input type="text" value=customer.address name='address' placeholder='1234, Street'}}
+    </div>
+  	<p>Fill in your details for payment</p>
     <div class="ui input">
       
       {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}

@@ -1,21 +1,32 @@
 {{yield}}
 <article class="listing">
 <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
-  <img src="{{car.image}}" alt="Click to see larger Image">
+{{#each-in car.media as |category products|}}  
+  {{#each (take 1 products) as |contestant|}}
+  <img src="{{contestant}}" alt="Click to see larger Image">
+{{/each}}
+      
+    
+  {{/each-in}}
+  
   <small>View Larger</small>
   </a>
-  <h3>{{car.title}}</h3>
-  <div class="detail owner">
-    <span>Owner:</span> {{car.owner}}
-  </div>
+  <h3>{{car.heading}}</h3>
+  
   <div class="detail type">
-    <span>Type:</span> {{car.category}}
+    <span>Price:</span> {{car.price}}
   </div>
   <div class="detail location">
-    <span>Location:</span> {{car.city}}
+    <span>Miles:</span> {{car.dealer.id}}
   </div>
   <div class="detail bedrooms">
-    <span>Class:</span> {{car.bedrooms}}
+    <span>Class:</span> 
+   {{#each-in car.build as |category products|}}
+    <li>{{category}}
+      :{{products}}
+    </li>
+  {{/each-in}}
+{{outlet}}
   </div>
   {{#link-to "buy" class="button"}}
     Buy

@@ -2,7 +2,7 @@
   <h3>Welcome!</h3>
   <p>We hope you find exactly what you're looking</p>
 </div>
-{{#each model as |carUnit|}}
-{{car-listing car=carUnit}}
-{{/each}}
+{{#each-in model.listings as |index carUnit|}}
+		{{car-listing car=carUnit}}
+{{/each-in}}
 {{outlet}}
