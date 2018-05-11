@@ -10,9 +10,6 @@
 }
 
 body,
-h1,
-h2,
-h3,
 h4,
 h5,
 h6,
@@ -26,16 +23,39 @@ a {
 
 body {
     background: #f3f3f3;
+    height: 100%;
+    margin: 0;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: column;
+}
+
+.one{
+  height: 300px;
+  width: 500px;
+  background: linear-gradient(45deg, rgba(116,116,168,1) 0%, rgba(116,116,168,0.62) 70%, rgba(134,174,204,0.45) 100%);
 }
 
 a {
-    color: #2185D0;
+    /*color: #2185D0;*/
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 p {
     line-height: 1.5;
     margin-bottom: 15px;
+}
+
+section > p{
+  color: #FFFFFF;
+
+}
+section > h3{
+  color: #FFFFFF;
+
 }
 /**
  * Button
