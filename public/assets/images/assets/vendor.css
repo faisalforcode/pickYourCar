@@ -10,6 +10,9 @@
 }
 
 body,
+h1,
+h2,
+h3,
 h4,
 h5,
 h6,
@@ -23,39 +26,16 @@ a {
 
 body {
     background: #f3f3f3;
-    height: 100%;
-    margin: 0;
-}
-
-.flex-container{
-  display: flex;
-  flex-flow: column;
-}
-
-.one{
-  height: 300px;
-  width: 600px;
-  background: linear-gradient(45deg, rgba(116,116,168,1) 0%, rgba(116,116,168,0.62) 70%, rgba(134,174,204,0.45) 100%);
 }
 
 a {
-    /*color: #2185D0;*/
-    color: #FFFFFF;
+    color: #2185D0;
     text-decoration: none;
 }
 
 p {
     line-height: 1.5;
     margin-bottom: 15px;
-}
-
-section > p{
-  color: #FFFFFF;
-
-}
-section > h3{
-  color: #FFFFFF;
-
 }
 /**
  * Button
@@ -160,12 +140,12 @@ input[type=text] {
 }
 
 .menu .links {
-    padding: 0 15px;
+    padding: 0 21px;
 }
 
 .menu .links a {
     position: relative;
-    bottom: auto;
+    bottom: 5px;
 }
 
 .list-filter input {
@@ -244,16 +224,6 @@ input[type=text] {
     margin-top: -25px;
 }
 
-.jumbo h3 {
-    font-size: 1.8em;
-    margin-top: -25px;
-}
-
-.jumbo h4 {
-    font-size: 1em;
-    margin-top: -25px;
-}
-
 .jumbo p {
     margin-bottom: 25px;
 }
@@ -264,19 +234,9 @@ input[type=text] {
     top: -25px;
     right: -20px;
 }
-
-.jumbo button{
-  height: 25px;
-  float: right;
-  margin-right: 10px;
-  border-radius: 5px;
-  color: #fff;
-  background: #00abff;
-}
 /**
  * Individual Listings
  */
-
 
 .listing {
     margin-top: 15px;
@@ -284,7 +244,6 @@ input[type=text] {
     padding: 15px 50px;
     min-height: 145px;
     position: relative;
-
 }
 
 .listing:hover {
@@ -418,36 +377,100 @@ input[type=text] {
     position: relative;
     top: -50px;
 }
-
-.aboutpage{
-  height:80vh;
-  background:url('/assets/images/Logo-Collage.png') no-repeat center;
-  background-size: cover;
-  opacity: 50%;
-  margin-bottom:30px;
+#ember-welcome-page-id-selector {
+  padding: 2em;
+  box-shadow: 0 0 0px 10px #FFFBF5;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.35em;
+  background: #FFFBF5;
+  color: #865931;
+  height: 100vh;
 }
-
-.contactimg{
-  height:70vh;
-  background:url('/assets/images/Cars-Collage-Types.jpg')
-  no-repeat center;
-  background-size: auto;
-  opacity: 50%;
-  margin-bottom:20px;
-  border-image: 20;
+#ember-welcome-page-id-selector img {
+  max-width: 100%;
 }
-
-.contactpagecenter{
-  height:60vh;
-  background:url('/assets/images/happy-customers.png')
-  no-repeat center;
-  background-size: contain;
-  margin-bottom:20px;
-  border-image: 100;
+#ember-welcome-page-id-selector p {
+  margin: 0 0 .75em;
 }
-
-.contactdiv{
-    display: inline-block;
-    position: relative;
-    bottom: auto;
+#ember-welcome-page-id-selector h2 {
+  color: #dd6a58;
+  margin-top: 1em;
+  font-size: 1.75em;
+  line-height: 1.2
+}
+#ember-welcome-page-id-selector a:link,
+#ember-welcome-page-id-selector a:visited {
+  color: #dd6a58;
+  text-decoration: none;
+}
+#ember-welcome-page-id-selector a:hover,
+#ember-welcome-page-id-selector a:active {
+  color: #c13c27;
+}
+#ember-welcome-page-id-selector .tomster {
+  flex: 2;
+}
+#ember-welcome-page-id-selector .welcome {
+  flex: 3;
+}
+#ember-welcome-page-id-selector .columns {
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#ember-welcome-page-id-selector .welcome ol {
+  list-style: disc;
+  padding-left: 2em;
+  margin-bottom: .75em;
+}
+#ember-welcome-page-id-selector .welcome > ol > li {
+  padding-bottom: .5em;
+}
+#ember-welcome-page-id-selector .postscript {
+  clear: both;
+  text-align: center;
+  padding-top: 3em;
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  line-height: 2;
+}
+#ember-welcome-page-id-selector .postscript code {
+  background-color: #F8E7CF;
+  border-radius: 3px;
+  font-family: Menlo, Courier, monospace;
+  font-size: 0.9em;
+  padding: 0.2em 0.5em;
+  margin: 0 0.1em;
+}
+@media (max-width: 700px) {
+  #ember-welcome-page-id-selector {
+    padding: 1em;
+  }
+  #ember-welcome-page-id-selector .columns {
+    flex-direction: column;
+  }
+  #ember-welcome-page-id-selector .welcome,
+  #ember-welcome-page-id-selector .tomster {
+  }
+  #ember-welcome-page-id-selector .tomster img {
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+  #ember-welcome-page-id-selector h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  #ember-welcome-page-id-selector .tomster img {
+    width: 60%;
+  }
+  #ember-welcome-page-id-selector .welcome,
+  #ember-welcome-page-id-selector .tomster {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
 }
