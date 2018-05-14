@@ -421,6 +421,13 @@ input[type=text] {
   margin-bottom: 20px;
 }
 
+.home{
+  height:100vh;
+  background:url('/assets/images/cars1.jpg') no-repeat center center;
+  background-size: cover;
+  margin-bottom:20px;
+}
+
 .homecenter {
   height: 100vh;
   background: url('/assets/images/BMW-GIF.gif') no-repeat center;
