@@ -1,7 +1,5 @@
 import Service from '@ember/service';
-import {
-  camelize
-} from '@ember/string';
+import {camelize} from '@ember/string';
 import EmberObject from '@ember/object';
 
 import MapUtil from '../utils/google-maps';
