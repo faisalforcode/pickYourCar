@@ -38,6 +38,7 @@
     "ember-credit-card": "^2.10.0",
     "ember-data": "~3.0.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-g-map": "0.0.25",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^4.0.0",
