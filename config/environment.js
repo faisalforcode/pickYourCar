@@ -30,7 +30,18 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+  ENV['g-map'] = {
+  exclude: true,
+  libraries: ['places', 'geometry'],
+  key: 'AIzaSyBFrGspv_bAWX8DLskVp8h1seRQd19mqmY',
+  client: 'chou.shruti',
+  channel: 'my-google-map-api-channel',
+  version: '3.26',
+  language: 'ru',
+  protocol: 'https'
+};
   apiKey: '080zLu3C9W2fhyE3BVbOGCMiEjIjMdy0'
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
