@@ -6,6 +6,14 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyDwzI1uGIcXO1pwij5QHt1pUegTpSZFmiA",
+      authDomain: "pickyourcar-74134.firebaseapp.com",
+      databaseURL: "https://pickyourcar-74134.firebaseio.com",
+      projectId: "pickyourcar-74134",
+      storageBucket: "pickyourcar-74134.appspot.com",
+      messagingSenderId: "35102651034"
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -22,6 +30,16 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+  ENV['g-map'] = {
+  exclude: true,
+  libraries: ['places', 'geometry'],
+  key: 'AIzaSyBFrGspv_bAWX8DLskVp8h1seRQd19mqmY',
+  client: 'chou.shruti',
+  channel: 'my-google-map-api-channel',
+  version: '3.26',
+  language: 'ru',
+  protocol: 'https'
+};
   apiKey: '080zLu3C9W2fhyE3BVbOGCMiEjIjMdy0'
 
   if (environment === 'development') {
