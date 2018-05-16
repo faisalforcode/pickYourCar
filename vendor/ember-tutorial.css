@@ -62,22 +62,29 @@ article>h2{
   color: #900C3F;
 }
 
+.moredetailes>li{
+  float: left;
+  list-style-type: square;
+  padding-left:220px;
+}
+
 .price{
   color: #2980B9;
   font-size: 22px;
   font-weight: 300;
 }
 
-.miles {
+.miles{
   color: #3498DB;
   font-size: 20px;
   font-weight: 300;
 }
 
-.moredetailes {
+.moredetailes{
   color: #000000;
   font-size: 15px;
   font-weight: 200;
+  background: #cce5ff;
 }
 
 .welcomeimg {
@@ -126,16 +133,16 @@ div.desc {
   position: relative;
 }
 
-.buttonBuy {
-  padding: 12px 30px 13px;
+.buttoncardetails {
+  padding: 8px 8px 5px;
   text-decoration: none;
-  color: #fff;
-  background: #00abff;
-  border-radius: 5px;
+  color: #000;
+  background: #CEF6E3;
+  border-radius: 1px;
   border: none;
-  font-size: 16px;
-  opacity: 0.9;
-  margin: 0 170px auto;
+  font-size: 9px;
+  opacity: 1;
+  margin: 0 150px auto;
 }
 
 .button:hover {
