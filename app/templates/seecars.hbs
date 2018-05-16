@@ -1,8 +1,12 @@
-<div class="jumbo">
-  <h3>Welcome!</h3>
-  <p>We hope you find exactly what you're looking</p>
-</div>
-{{#each model as |m|}}
-    {{car-listing car=m}}
-{{/each}}
+<body>
+    <div class="jumbo">
+      <br>
+      <h3>Welcome!</h3>
+      <p>We hope you find exactly what you're looking</p>
+    </div>
+
+    {{#each model as |m|}}
+      {{car-listing car=m}}
+    {{/each}}
 {{outlet}}
+</body>
