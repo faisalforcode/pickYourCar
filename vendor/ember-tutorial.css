@@ -48,6 +48,12 @@ section>p {
   color: #FFFFFF;
 }
 
+section>h2 {
+  margin-left: 10px;
+  color: #000000;
+  font-size: 30px;
+}
+
 section>h3 {
   color: #FFFFFF;
 }
@@ -61,12 +67,6 @@ article>h3{
 
 article>h2{
   color: #900C3F;
-}
-
-.moredetailes>li{
-  float: left;
-  list-style-type: square;
-  padding-left:220px;
 }
 
 .price{
@@ -88,6 +88,12 @@ article>h2{
   background: #cce5ff;
 }
 
+.moredetailes>li{
+  float: left;
+  list-style-type: square;
+  padding-left:220px;
+}
+
 .welcomeimg {
   height: 20vh;
   background: url('/assets/images/movingcar2.gif') no-repeat;
@@ -95,9 +101,6 @@ article>h2{
   background-size: auto;
   border-image: 20;
 }
-
-
-
 
 div.gallery {
     margin: 5px;
@@ -120,10 +123,8 @@ div.desc {
     text-align: center;
 }
 
-
-
 .button {
-  padding: 12px 30px 13px;
+  padding: 12px 30px 12px;
   text-decoration: none;
   color: #fff;
   background: #00abff;
@@ -143,7 +144,8 @@ div.desc {
   border: none;
   font-size: 9px;
   opacity: 1;
-  margin: 0 150px auto;
+  margin: 0 130px auto;
+  position: relative;
 }
 
 .button:hover {
@@ -164,11 +166,35 @@ div.desc {
 .containerCredit {
   margin: 0 auto;
   text-align: left;
-  max-width: 512px;
-  border-radius: 5px;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 4px;
   background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
+
+}
+
+.containerOne{
+  float:left;
+  max-width: 500px;
+  width:50%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.containermiddle{
+  float: left;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.containerTwo{
+  float:left;
+  max-width: 500px;
+  width:50%;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 input[type=text] {
@@ -486,16 +512,16 @@ input[type=text] {
 }
 
 .aboutpage {
-  height: 80vh;
+  height: 40vh;
   background: url('/assets/images/Logo-Collage.png') no-repeat center;
-  background-size: cover;
-  filter: opacity(70%);
+  background-size: contain;
+  filter: opacity(50%);
   margin-bottom: 20px;
 }
 
 .home{
   height:100vh;
-  background:url('/assets/images/cars1.jpg') no-repeat center center;
+  background:url('/assets/images/car-payment.jpg') no-repeat center center;
   background-size: cover;
   margin-bottom:20px;
 }
@@ -508,12 +534,12 @@ input[type=text] {
 }
 
 .contactimg {
-  height: 70vh;
+  height: 80vh;
   background: url('/assets/images/Cars-Collage-Types.jpg') no-repeat center;
-  background-size: auto;
+  background-size: cover;
   filter:opacity(80%);
   margin-bottom: 20px;
-  border-image: 20;
+  border-image: 0;
 }
 
 .contactpagecenter {
@@ -522,7 +548,7 @@ input[type=text] {
   background-size: contain;
   margin-bottom: 20px;
   filter: grayscale(100%);
-  border-image: 100;
+  border-image: 80;
 }
 
 .contactdiv {
