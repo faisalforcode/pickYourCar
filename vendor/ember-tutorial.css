@@ -351,6 +351,7 @@ input[type=text] {
   float: left;
   margin-right: 45px;
   border-radius: 5px;
+  background-image: url("/assets/images/cars1.jpg");
 }
 
 .listing button {
