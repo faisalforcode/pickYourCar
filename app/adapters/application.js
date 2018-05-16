@@ -1,7 +1,3 @@
-// import FirebaseAdapter from 'emberfire/adapters/firebase';
-//
-// export default FirebaseAdapter.extend({
-// });
 import Ember from 'ember';
 import FirebaseAdapter from 'emberfire/adapters/firebase';
 

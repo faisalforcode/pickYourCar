@@ -7,12 +7,12 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
     firebase: {
-      apiKey: "AIzaSyDwzI1uGIcXO1pwij5QHt1pUegTpSZFmiA",
-      authDomain: "pickyourcar-74134.firebaseapp.com",
-      databaseURL: "https://pickyourcar-74134.firebaseio.com",
-      projectId: "pickyourcar-74134",
-      storageBucket: "pickyourcar-74134.appspot.com",
-      messagingSenderId: "35102651034"
+      apiKey: "AIzaSyBn2UOhO_XL7O7mhMWZzsh6dhlY0vuh6ZM",
+    authDomain: "pickyourcar-25ab5.firebaseapp.com",
+    databaseURL: "https://pickyourcar-25ab5.firebaseio.com",
+    projectId: "pickyourcar-25ab5",
+    storageBucket: "pickyourcar-25ab5.appspot.com",
+    messagingSenderId: "360513885035"
     },
     EmberENV: {
       FEATURES: {

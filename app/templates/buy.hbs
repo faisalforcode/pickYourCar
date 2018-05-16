@@ -5,50 +5,49 @@
     <p>Customer Information</p>
     <div class="ui input">
 
-      {{input type="text" value=customer.firstName name='firstName' placeholder='Enter your first name'}}
+      {{input type="text" value=firstName name='firstName' placeholder='Enter your first name'}}
     </div>
 
     <div class="ui input">
-      {{input type="text" value=customer.lastName name='lastName' placeholder='Enter your last name'}}
+      {{input type="text" value=lastName name='lastName' placeholder='Enter your last name'}}
     </div>
 
     <div class="ui input">
 
-      {{input type="text" value=customer.contactNumber name='contactNumber' placeholder='+1-1111111111'}}
+      {{input type="text" value=contactNumber name='contactNumber' placeholder='+1-1111111111'}}
     </div>
     <div class="ui input">
 
-      {{input type="text" value=customer.address name='address' placeholder='1234, Street, Apartment'}}
+      {{input type="text" value=address name='address' placeholder='1234, Street, Apartment'}}
     </div>
   	<p>Fill in details to complete your payment</p>
     <div class="ui input">
 
-      {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
+      {{input type="text" value=number name='number' placeholder='Credit Card Number'}}
     </div>
 
     <div class="ui input">
 
-      {{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
+      {{input type="text" value=name name='name' placeholder='Name on Credit Card'}}
     </div>
 
     <div class="ui input">
 
-      {{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
+      {{input type="text" name='expiry' value=expiration placeholder='MM/YY'}}
     </div>
 
     <div class="ui input">
 
-      {{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
+      {{input type="text" name='cvc' value=cvc placeholder='CVC'}}
     </div>
 
     <div class="ui input">
 
-      {{input type="text" name='email' value=creditCard.email placeholder='Please type your e-mail address'}}
+      {{input type="text" name='email' value=email placeholder='Please type your e-mail address'}}
     </div>
     <br>
- {{#link-to "about" class="button"}}
-    Submit
-  {{/link-to}}
+    <button {{action "submit"}} class="button">Submit</button>
+
   </form>
 </div>
 {{/credit-card}}
