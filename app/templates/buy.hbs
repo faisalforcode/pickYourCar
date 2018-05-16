@@ -1,54 +1,49 @@
-<h2>You are few steps to go......</h2>
-{{#credit-card form="#my-form"}}
-<div class="home">
-  <form id='my-form' class='containerCredit'>
-    <p>Customer Information</p>
-    <div class="ui input">
+<section class="home">
+  <h2>You are few steps to go.........!!</h2>
+  {{#credit-card form="#my-form" }}
+    <form id='my-form' class='containerCredit'>
+        <div class="containerOne">
+          <p>Customer Information</p>
+          <div class="ui input">
+            {{input type="text" value=customer.firstName name='firstName' placeholder='Enter your first name'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=customer.lastName name='lastName' placeholder='Enter your last name'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=customer.contactNumber name='contactNumber' placeholder='+1-1111111111'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=customer.address name='address' placeholder='1234, Street, Apartment'}}
+          </div>
+        </div>
+        <div class="containermiddle">
+          <br>
+        </div>
+        <div class="containerTwo">
+          <p>Fill in details to complete your payment</p>
+          <div class="ui input">
+            {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
+          </div>
+          <div class="ui input">
+            {{input type="text" name='email' value=creditCard.email placeholder='Please type your e-mail address'}}
+          </div>
+        </div>
+      <div>
+        {{#link-to "about" class="button" }}
+          Submit
+        {{/link-to}}
+      </div>
 
-      {{input type="text" value=customer.firstName name='firstName' placeholder='Enter your first name'}}
-    </div>
-
-    <div class="ui input">
-      {{input type="text" value=customer.lastName name='lastName' placeholder='Enter your last name'}}
-    </div>
-
-    <div class="ui input">
-
-      {{input type="text" value=customer.contactNumber name='contactNumber' placeholder='+1-1111111111'}}
-    </div>
-    <div class="ui input">
-
-      {{input type="text" value=customer.address name='address' placeholder='1234, Street, Apartment'}}
-    </div>
-  	<p>Fill in details to complete your payment</p>
-    <div class="ui input">
-
-      {{input type="text" value=creditCard.number name='number' placeholder='Credit Card Number'}}
-    </div>
-
-    <div class="ui input">
-
-      {{input type="text" value=creditCard.name name='name' placeholder='Name on Credit Card'}}
-    </div>
-
-    <div class="ui input">
-
-      {{input type="text" name='expiry' value=creditCard.expiration placeholder='MM/YY'}}
-    </div>
-
-    <div class="ui input">
-
-      {{input type="text" name='cvc' value=creditCard.cvc placeholder='CVC'}}
-    </div>
-
-    <div class="ui input">
-
-      {{input type="text" name='email' value=creditCard.email placeholder='Please type your e-mail address'}}
-    </div>
-    <br>
- {{#link-to "about" class="button"}}
-    Submit
-  {{/link-to}}
-  </form>
-</div>
-{{/credit-card}}
+    </form>
+  {{/credit-card}}
+</section>
