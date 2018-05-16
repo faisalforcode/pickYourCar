@@ -534,7 +534,7 @@ input[type=text] {
 }
 
 .contactimg {
-  height: 80vh;
+  height: 50vh;
   background: url('/assets/images/Cars-Collage-Types.jpg') no-repeat center;
   background-size: cover;
   filter:opacity(80%);
@@ -560,7 +560,7 @@ input[type=text] {
     display:inline-block;
     position: absolute;
     width:300px;
-    height:100%;
+    height:30%;
     float:left;
 }
 

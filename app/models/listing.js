@@ -1,10 +1,9 @@
-// import DS from 'ember-data';
-//
-// export default DS.Model.extend({
-//
-// });
-
 import DS from 'ember-data';
+
+export default DS.Model.extend({
+});
+
+/*import DS from 'ember-data';
 
 export default DS.Model.extend({
   build:DS.attr(),
@@ -23,4 +22,4 @@ export default DS.Model.extend({
   inventory_type:DS.attr(),
   last_seen_at:DS.attr(),
   media:DS.attr(),
-});
+});*/

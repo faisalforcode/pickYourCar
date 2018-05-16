@@ -4,9 +4,9 @@
       <h3>Welcome!</h3>
       <p>We hope you find exactly what you're looking</p>
     </div>
-
-    {{#each model as |m|}}
-      {{car-listing car=m}}
-    {{/each}}
+    <p></p>
+    {{#each-in model.listings as |index carUnit|}}
+      {{car-listing car=carUnit}}
+    {{/each-in}}
 {{outlet}}
 </body>
