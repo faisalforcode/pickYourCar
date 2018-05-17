@@ -528,7 +528,7 @@ input[type=text] {
 
 .homecenter {
   height: 100vh;
-  background: url('/assets/images/BMW-GIF.gif') no-repeat center;
+  background: url('/assets/images/cars.gif') no-repeat center;
   background-size: cover;
   margin-bottom: 20px;
 }
