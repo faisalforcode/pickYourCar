@@ -19,6 +19,10 @@ export default Controller.extend({
       });
       buy.save();
       this.transitionToRoute('confirmation');
+    },
+
+    sendMail: function() {
+      emailjs.send("pickyourcar","pickyourcar",{name: "Pick Your Car", notes: "Purchase Completed"});
     }
   }
 });

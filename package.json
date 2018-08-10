@@ -56,5 +56,8 @@
   "bugs": {
     "url": "https://github.com/faisalforcode/pickYourCar/issues"
   },
-  "homepage": "https://github.com/faisalforcode/pickYourCar#readme"
+  "homepage": "https://github.com/faisalforcode/pickYourCar#readme",
+  "dependencies": {
+    "emailjs-com": "^2.1.1"
+  }
 }
