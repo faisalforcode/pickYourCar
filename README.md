@@ -1,5 +1,11 @@
 # pick-your-car
 
+Has
+Firebase
+Market Place API interaction - Gives the cars available in area for sale.
+Ember JS
+
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
